@@ -1,9 +1,36 @@
-body {
-    background-color: #87A922;
+ body {
+    background-color: #FFF9D0;
 }
 
 .navbar{
-    background-color: #114232;
+    background-color: #CAF4FF;
     color: #ffff !important;
 }
 
+div#general{
+    margin:auto;
+    background-color: #FFF9D0;
+    height: 800px;
+    width: 960px;
+}
+
+.card{
+    margin: auto !important;
+    margin-top: 20px !important;
+}
+
+.titulo{
+    justify-content: center !important;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px
+}
+
+
+
+
+
+
+@media screen and (max-width: 1700px){
+    
+
+}
