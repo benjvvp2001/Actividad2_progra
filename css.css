@@ -1,15 +1,15 @@
  body {
-    background-color: #FFF9D0;
+    background-color:  #CDF5FD;
 }
 
 .navbar{
-    background-color: #CAF4FF;
+    background-color: #44c7ff;
     color: #ffff !important;
 }
 
 div#general{
     margin:auto;
-    background-color: #FFF9D0;  
+    background-color: #A0E9FF;  
     width: 960px;
     margin-bottom: 0% !important;
     
@@ -28,7 +28,7 @@ div#general{
 }
 
 #contacto{
-    background-color:#F6E9B2 ;
+    background-color:#7BD3EA ;
     opacity: 60%;
     margin-top: 10px;
     height: 200px;
