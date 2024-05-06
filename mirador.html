@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body >
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar ">
+            <a class="navbar-brand" href="turismo.html">Turismo extremo sur</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="clima.html">Clima</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link " href="#contacto">Contactos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <!--inicio del cuerpo-->
+    <div  id="general" class="container " >
+      
+      <div class="" id="mirador"><h1 >Mirador Zapador austral</h1></div>
+          
+          
+    </div>
+    
+    <footer id="contacto">
+      <div><h5 >Contactos</h5>
+         <article>
+          <p >
+            Whatsapp: +569 3749 0080 <br>
+            <br> Telefono: 600 600 3000 <br>
+            <br> Correo: contacto@sqlzo.cl
+          </p>
+        </article>
+      </div>
+         
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+    
+
+    <script>
+        const settings = {
+            async: true,
+            crossDomain: true,
+            url: 'https://yahoo-weather5.p.rapidapi.com/weather?location=Punta%20arenas&format=json&u=c',
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '6bfbe18aa7msh199419cf596f99dp17890fjsn328109e38b6e',
+                'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
+            }
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response.location.city);
+        });
+    </script>
+</body>
+</html>
